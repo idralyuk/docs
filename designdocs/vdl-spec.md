@@ -1,7 +1,5 @@
 # VDL specification
 
-<!-- TODO(sadovsky): Fix godoc links. -->
-
 This is a reference manual for VDL, the Vanadium Definition Language.  The intended audience is both end-users writing VDL files, as well as core developers implementing VDL.
 
 VDL is an interface definition language for describing Vanadium components.  It is designed to enable interoperability between implementations executing in heterogeneous environments.  E.g. it enables a frontend written in JavaScript running on a phone to communicate with a backend written in Go running on a server.  VDL is compiled into an intermediate representation that is used to generate code in each target environment.
@@ -159,14 +157,15 @@ package bignum
 ## Standard packages
 
 VDL comes with a collection of standard packages, which define common types and
-interfaces that may be used by all applications.  E.g. the
-[time package](https://godoc.v.io/src/v.io/v23/vdlroot/time/time.vdl) defines a
-standard representation of time, to promote compatibility across different
-computing environments.
+interfaces that may be used by all applications. E.g. the [time
+package](https://github.com/vanadium/go.v23/blob/master/vdlroot/time/time.vdl)
+defines a standard representation of time, to promote compatibility across
+different computing environments.
 
-The current set of [standard packages](https://godoc.v.io/src/v.io/v23/vdlroot)
-is small, and will grow over time to provide more standardized representations
-of core concepts.
+The current set of [standard
+packages](https://github.com/vanadium/go.v23/blob/master/vdlroot) is small, and
+will grow over time to provide more standardized representations of core
+concepts.
 
 ## Imports
 An import states that the source file containing the import depends on the imported package, and enables access to the exported identifiers of that package.  Cyclic dependencies are not allowed.  The PackageName is used as the first component of a QualifiedName, and is used to access identifiers of that package within the importing source file.  If the PackageName is omitted, it defaults to the identifier specified in the PackageClause of the imported package.
@@ -589,4 +588,4 @@ Config files that use more than the built-in types need to import the packages d
 All valid config files must start with "config".  However "config" is not itself a keyword in the grammar; it may be used as a regular identifier.
 
 ### vdl.config
-The vdl tool is an example of a command-line program that requires configuration; e.g. there are options for code generation in each native language.  Each vdl package directory may contain a special `vdl.config` file, representing the configuration for that vdl package.  The `vdl.config` file is written in the generic VDL config file syntax, exporting a constant with type [vdltool.Config](https://godoc.v.io/src/v.io/v23/vdlroot/vdltool/config.vdl).  An example is the [vdl.config file](https://godoc.v.io/src/v.io/v23/vdlroot/time/vdl.config) for the standard time package.
+The vdl tool is an example of a command-line program that requires configuration; e.g. there are options for code generation in each native language.  Each vdl package directory may contain a special `vdl.config` file, representing the configuration for that vdl package.  The `vdl.config` file is written in the generic VDL config file syntax, exporting a constant with type [vdltool.Config](https://github.com/vanadium/go.v23/blob/master/vdlroot/vdltool/config.vdl).  An example is the [vdl.config file](https://github.com/vanadium/go.v23/blob/master/vdlroot/time/vdl.config) for the standard time package.

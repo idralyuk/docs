@@ -23,11 +23,11 @@ The Proxy Service listens for connections from Vanadium services (typically behi
 
 See also: [proxy Go documentation]
 
-[proxy Go documentation]: https://godoc.v.io/pkg/v.io/x/ref/services/proxy/
-[`mounttable` Go documentation]: https://godoc.v.io/pkg/v.io/x/ref/services/mounttable/
+[proxy Go documentation]: https://godoc.org/v.io/x/ref/services/proxy
+[`mounttable` Go documentation]: https://godoc.org/v.io/x/ref/services/mounttable
 [Mount table]: ../glossary.md#mount-table
 [Naming Concepts]: ../concepts/naming.md
 [Security Concepts]: ../concepts/security.md
-[identityd Go documentation]: https://godoc.v.io/pkg/v.io/x/ref/services/identity/identityd/
+[identityd Go documentation]: https://godoc.org/v.io/x/ref/services/identity/identityd
 [terms of service]: ../tos.md
 [Identity service FAQ]: identity-service-faq.md

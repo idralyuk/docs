@@ -1,7 +1,5 @@
 # Identity Service
 
-<!-- TODO(sadovsky): Fix embedded img tags. -->
-
 The [Vanadium Identity Service][`identityd`] generates [blessings][blessing].
 It uses an [OAuth2] identity provider to get the email address of a user and
 then issues a blessing with that email address. For example, after determining
@@ -92,7 +90,7 @@ obtaining a macaroon from the HTTPS Authentication Service and exchanging it
 for a blessing from the Vanadium Blessing Service. The following sequence
 diagram lists the network requests involved in this process:
 
-![](/images/blessing-flow.svg)
+![](https://cdn.rawgit.com/vanadium/docs/images/blessing-flow.svg)
 
 - Solid-line arrows represent HTTPS requests (except one HTTP to localhost).
 - Dotted-line arrows represent Vanadium RPC requests.

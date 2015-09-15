@@ -1,8 +1,5 @@
 # Authentication protocol
 
-<!-- TODO(sadovsky): Fix embedded img tags. -->
-<!-- TODO(sadovsky): Fix godoc links. -->
-
 When a network connection is established between two Vanadium processes, they
 authenticate each other, i.e., exchange blessings so that both ends can
 identify the specific principal at the other end. The remote blessing names are
@@ -47,7 +44,7 @@ are provided with each RPC request.
 In this implementation, [NaCl/box] is used to establish an [authenticated-encryption]
 channel based on an ECDH key exchange.
 
-![](/images/authentication-flow.svg)
+![](https://cdn.rawgit.com/vanadium/docs/images/authentication-flow.svg)
 Where:
 - `{foo}k` represents the message `foo` encrypted using the key `k`
 - Channel bindings C1 and C2 at the Client and Server ends respectively are
@@ -123,7 +120,7 @@ Pointers to code in the reference implementation of the Vanadium APIs:
 [session resumption is not used]: https://secure-resumption.com/#channelbindings
 [channel ids]: http://tools.ietf.org/html/draft-balfanz-tls-channelid-00
 [principal]: ../glossary.md#principal
-[`v.io/v23/security.Blessings`]: https://godoc.v.io/pkg/v.io/v23/security/#Blessings
-[`v.io/v23/security.Principal`]: https://godoc.v.io/pkg/v.io/v23/security/#Principal
-[`v.io/x/ref/runtime/internal/rpc/stream`]: https://godoc.v.io/pkg/v.io/x/ref/runtime/internal/rpc/stream
+[`v.io/v23/security.Blessings`]: https://godoc.org/v.io/v23/security#Blessings
+[`v.io/v23/security.Principal`]: https://godoc.org/v.io/v23/security#Principal
+[`v.io/x/ref/runtime/internal/rpc/stream`]: https://godoc.org/v.io/x/ref/runtime/internal/rpc/stream
 [NaCl/box]: https://godoc.org/golang.org/x/crypto/nacl/box

@@ -1,7 +1,5 @@
 # Vanadium Chrome Extension
 
-<!-- TODO(sadovsky): Fix embedded img tags. -->
-
 The [Vanadium Chrome extension][] is a bridge between JavaScript web apps and
 the Vanadium runtime, libraries, and services.
 
@@ -32,7 +30,7 @@ extension, which makes calls to other Vanadium devices in the cloud.  The
 extension sends messages back to the web app when those calls return, or when
 an external device initiates a call to the JavaScript client.
 
-![Vanadium Chrome extension overview](/images/tools/chrome-extension-overview.svg)
+![Vanadium Chrome extension overview](https://cdn.rawgit.com/vanadium/docs/images/chrome-extension-overview.svg)
 
 Isolating the Vanadium libraries inside a NaCl plugin has the added benefit
 that no JavaScript web app ever sees any private keys.  All cryptographic
@@ -46,7 +44,7 @@ The Vanadium extension has two main components:
 
 The following diagram depicts these components and the flow of messages between them.
 
-![Vanadium Chrome extension details](/images/tools/chrome-extension-detail.svg)
+![Vanadium Chrome extension details](https://cdn.rawgit.com/vanadium/docs/images/chrome-extension-detail.svg)
 
 When a web app makes an RPC to a device using the Vanadium JavaScript library,
 a message is sent to the content script, which then forwards that message to
