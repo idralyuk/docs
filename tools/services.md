@@ -1,7 +1,5 @@
 # Vanadium Cloud Services
 
-<!-- TODO(sadovsky): Fix godoc links. -->
-
 While it's possible to run all Vanadium infrastructure services on your own we host several of them to ease development overhead. The following services are available to use and are often the default values for most configurations. All services listed here are covered by the the [terms of service].
 
 ## Mount table

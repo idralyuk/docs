@@ -78,7 +78,7 @@ Be sure to add the `$V23_ROOT` environment variable to your profile.
 Run the initial setup script (this might take several minutes):
 
 ```bash
-curl -u vanadium:D6HT]P,LrJ7e https://v.io/bootstrap | bash
+curl https://v.io/bootstrap | bash
 ```
 
 #### Update your PATH
