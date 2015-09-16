@@ -1,7 +1,7 @@
 # Terms of Service
 
 The Vanadium website (the "Website") and [Vanadium Cloud
-Services][tools/services.md] (the "Services") are hosted by Google. By using
+Services](tools/services.md) (the "Services") are hosted by Google. By using
 and/or visiting the Website and/or Services, you consent to be bound by Google's
 general [Terms of Service], the [Google APIs Terms of Service], and Google's
 general [Privacy Policy].
