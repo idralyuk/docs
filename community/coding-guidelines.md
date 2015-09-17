@@ -6,7 +6,7 @@ Vanadium is spread across multiple [git repositories]. The [contributor
 installation] process arranges these repositories as follows:
 
 ```
- $V23_ROOT
+ $JIRI_ROOT
    devtools          # Contributor tools
    environment       # Platform dependent configuration
    .manifest         # Multi-repo control data

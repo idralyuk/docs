@@ -62,16 +62,16 @@ contains the entire collection of repositories (projects) which make up the
 Vanadium universe of language libraries, command line tools, services,
 website, example projects, and development tools like [v23].
 
-#### V23_ROOT environment variable
+#### JIRI_ROOT environment variable
 
-Set the `V23_ROOT` environment variable. Use an absolute path that points to a local file system location (remote file system such as NFS are discouraged for performance reasons and to avoid ENOKEY 'git' errors). **Use a directory that does NOT exist**; the following steps will create it.
+Set the `JIRI_ROOT` environment variable. Use an absolute path that points to a local file system location (remote file system such as NFS are discouraged for performance reasons and to avoid ENOKEY 'git' errors). **Use a directory that does NOT exist**; the following steps will create it.
 
 ```bash
 # Edit to taste
-export V23_ROOT=${HOME}/vanadium
+export JIRI_ROOT=${HOME}/vanadium
 ```
 
-Be sure to add the `$V23_ROOT` environment variable to your profile.
+Be sure to add the `$JIRI_ROOT` environment variable to your profile.
 
 #### Setup script
 
@@ -83,10 +83,10 @@ curl https://v.io/bootstrap | bash
 
 #### Update your PATH
 
-Add `$V23_ROOT/devtools/bin` to your `PATH`.
+Add `$JIRI_ROOT/devtools/bin` to your `PATH`.
 
 ```bash
-export PATH=$PATH:$V23_ROOT/devtools/bin
+export PATH=$PATH:$JIRI_ROOT/devtools/bin
 ```
 
 Be sure to add the modified `$PATH` to your profile.
@@ -190,7 +190,7 @@ v23 go install v.io/...
 All other dependencies can be satisfied via the default `make` target.
 
 ```bash
-cd $V23_ROOT/release/javascript/core
+cd $JIRI_ROOT/release/javascript/core
 make
 ```
 
