@@ -45,17 +45,23 @@ Linux and OS X.
    Vanadium repositories, which include Syncbase as well as the Todos demo app.
 2. Install the Syncbase profile, which includes Syncbase-specific
    prerequisites such as LevelDB
-       jiri profile install syncbase
+
+        jiri profile install syncbase
+
 3. Run the Syncbase tests
-       jiri go test v.io/v23/syncbase/...
+
+        jiri go test v.io/v23/syncbase/...
+
 4. Build the Syncbase server binary and other Vanadium tools
-       jiri go install v.io/x/ref/...
+
+        jiri go install v.io/x/ref/...
 
 <!-- TODO: On OS X, step (3) opens a bunch of warning popups about accepting
 incoming connections. We should make our test servers listen on the loopback
 address. -->
 
 You should now have the following binaries available, among others:
+
     $JIRI_ROOT/release/go/bin/mounttabled
     $JIRI_ROOT/release/go/bin/syncbased
     $JIRI_ROOT/release/go/bin/vrpc
@@ -69,22 +75,25 @@ You should now have the following binaries available, among others:
 To run the Todos demo app shown in the video, follow these additional
 instructions:
 
-1. Install the [Vanadium Chrome
-   extension](../tools/vanadium-chrome-extension.md)
+1. Install the [Vanadium Chrome extension]
 2. If running on OS X, install full Xcode from the App Store (needed by the next
    step)
 3. Install the Node.js profile
-       jiri profile install nodejs
+
+        jiri profile install nodejs
+
 4. Follow the demo setup instructions in the following file:
-       $JIRI_ROOT/release/projects/todos/demo.md
+
+        $JIRI_ROOT/release/projects/todos/demo.md
 
 To get a fresh copy of the Vanadium source code and rebuild everything for the
 demo, run these commands from the todos root dir:
+
     jiri update
     make clean
 
 If you get certificate signature verification errors when running the webapp,
-try uninstalling and reinstalling your Vanadium Chrome extension.
+try uninstalling and reinstalling your [Vanadium Chrome extension].
 
 ## Basic Usage
 
@@ -391,3 +400,4 @@ resolvers, additional types of predefined resolvers, CRDTs, etc.*
 [VOM]: ../concepts/rpc.md#vom
 [VDL]: ../concepts/rpc.md#vdl
 [Vanadium security model]: security.md
+[Vanadium Chrome extension]: ../tools/vanadium-chrome-extension.md
