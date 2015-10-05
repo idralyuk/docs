@@ -45,8 +45,7 @@ Make sure your machine has the credentials as described above.
 If you are developing on Darwin (OS X), you need to have the Xcode command
 line tools installed. You can quickly install these in the terminal with:
 
-
-    # Mac only prerequisite install
+    # Mac-only prerequisite install
     xcode-select --install
 
 The instructions on this page assume that the following software is installed and in your `PATH`:
@@ -308,8 +307,8 @@ If you are unsure who to add as a reviewer you can leave off the `-r` flag. Our 
    branch.
 3. Optional: Delete the feature branch once it has been submitted:
 
-       git checkout master
-       jiri cl cleanup <branch>
+        git checkout master
+        jiri cl cleanup <branch>
 
 #### Useful shortcuts
 

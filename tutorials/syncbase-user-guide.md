@@ -25,8 +25,8 @@ Internet.
   - Open source reference implementation of Syncbase for developers who want
     tight control over the data
 
-The initial version of Syncbase is ready for testing and evaluation by Vanadium
-trusted testers.
+The initial version of Syncbase is ready for testing and evaluation by early
+adopters - it is suitable for prototyping, but not for production applications.
 
 This document covers installation and basic usage. It should be enough for
 developers to get started using Syncbase. For more details on the design, see

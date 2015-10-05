@@ -6,4 +6,4 @@ will have the `jiri` tool in your `PATH` and can run:
 
     jiri help
 
-[contributing]: ../community/contributing.md
+[contributing]: ../contributing/README.md

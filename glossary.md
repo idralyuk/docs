@@ -372,10 +372,7 @@ See also: [Security Concepts].
 ## v23
 
 The [atomic number of Vanadium][vanadium-element] is 23, which is the
-inspiration behind the `v23` shorthand for Vanadium.  It is used broadly, from
-directory names to command-line flags and tools.
-
-See also: [v23 command-line tool](tools/v23.md), [Contribution instructions](community/contributing.md).
+inspiration behind the `v23` shorthand for Vanadium.
 
 ## vrpc
 

@@ -25,8 +25,8 @@ Internet.
   - Open source reference implementation of Syncbase for developers who want
     tight control over the data
 
-The initial version of Syncbase is ready for testing and evaluation by Vanadium
-trusted testers.
+The initial version of Syncbase is ready for testing and evaluation by early
+adopters - it is suitable for prototyping, but not for production applications.
 
 This document presents an overview of the system. It is very light on
 implementation details. Subsequent docs will contain those details.
@@ -77,8 +77,8 @@ Both SQL and NoSQL databases have strong support for blobs. Blobs support a
 streaming upload/download API rather than the all-at-once operations of the
 structured data. Syncbase understands references to blobs in the structured
 data, making it possible to implement automatic caching and garbage collection
-of the blobs. The blob reference's implicitly grant access to the blobs in a
-manner similar to a capability (see [blob references](#references)).
+of the blobs. Blob references implicitly grant access to blobs in a manner
+similar to a capability (see [blob references](#references)).
 
 ### Batches
 
