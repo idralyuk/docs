@@ -33,17 +33,13 @@ implementation details. Subsequent docs will contain those details.
 
 ## Background
 
-There are many storage systems that are trying to synchronize data across mobile
-devices. Those systems are mostly cloud-centric rather than peer-to-peer. If
-they are peer-to-peer, they are focused on files rather than structured storage.
-Few systems have the fine-grained access control or powerful conflict resolution
-we want. In summary, we're trying to solve a bunch of problems simultaneously
-whereas those other systems each solve a subset of those problems.
-
-- [Firebase](https://www.firebase.com/): Cloud-centric
-- [Parse](https://www.parse.com/): Cloud-centric
-- [Azure Mobile Services](https://azure.microsoft.com/en-us/documentation/articles/mobile-services-ios-get-started-offline-data/): Cloud-centric
-- [Bittorrent Sync](https://www.getsync.com/): Files/blobs only
+There are many storage systems that synchronize data between mobile devices, but
+most such systems are cloud-centric rather than peer-to-peer, and the few that
+are peer-to-peer typically focus on files rather than structured storage. In
+addition, very few systems have the fine-grained access control or powerful,
+configurable conflict resolution we want. In summary, we're trying to solve a
+bunch of problems simultaneously whereas those other systems each solve a subset
+of those problems.
 
 ## Data Model
 

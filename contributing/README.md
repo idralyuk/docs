@@ -42,11 +42,17 @@ Make sure your machine has the credentials as described above.
 
 ### Prerequisites
 
-If you are developing on Darwin (OS X), you need to have the Xcode command
-line tools installed. You can quickly install these in the terminal with:
+If you are developing on Darwin (OS X), you need to have the Xcode Command Line
+Tools package installed. You can install this package from a terminal with:
 
     # Mac-only prerequisite install
     xcode-select --install
+
+On Darwin (OS X), you'll also need the [Homebrew package manager][brew]
+installed. You can install it with:
+
+    # Mac-only prerequisite install
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 The instructions on this page assume that the following software is installed and in your `PATH`:
 
