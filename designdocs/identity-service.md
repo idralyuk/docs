@@ -90,7 +90,7 @@ obtaining a macaroon from the HTTPS Authentication Service and exchanging it
 for a blessing from the Vanadium Blessing Service. The following sequence
 diagram lists the network requests involved in this process:
 
-![](https://cdn.rawgit.com/vanadium/docs/blob/master/images/blessing-flow.svg)
+![](https://cdn.rawgit.com/vanadium/docs/master/images/blessing-flow.svg)
 
 - Solid-line arrows represent HTTPS requests (except one HTTP to localhost).
 - Dotted-line arrows represent Vanadium RPC requests.

@@ -44,7 +44,7 @@ are provided with each RPC request.
 In this implementation, [NaCl/box] is used to establish an [authenticated-encryption]
 channel based on an ECDH key exchange.
 
-![](https://cdn.rawgit.com/vanadium/docs/blob/master/images/authentication-flow.svg)
+![](https://cdn.rawgit.com/vanadium/docs/master/images/authentication-flow.svg)
 Where:
 - `{foo}k` represents the message `foo` encrypted using the key `k`
 - Channel bindings C1 and C2 at the Client and Server ends respectively are

@@ -39,7 +39,7 @@ below, which shows 6 mount tables. `ns1.v.io:8101` is the _root_ and
 `a/y/foo/bar`, `mount table a/y` must also be consulted, since it serves
 mounts made below `y`.
 
-![Example namespace](https://cdn.rawgit.com/vanadium/docs/blob/master/images/namespace-generic.svg)
+![Example namespace](https://cdn.rawgit.com/vanadium/docs/master/images/namespace-generic.svg)
 
 The first element of a name that begins with `/` points to the mount table at
 which to begin the resolution. For example, the name `/ns1.v.io:8101/a` starts
@@ -56,12 +56,12 @@ This is illustrated below, where process `Client 1` has a namespace
 that is relative to `ns1.v.io:8101`, its root, and hence can resolve
 `a`, `b`, `c`, `a/y`, and `a/z`.
 
-![The view from Client 1](https://cdn.rawgit.com/vanadium/docs/blob/master/images/namespace-client1.svg)
+![The view from Client 1](https://cdn.rawgit.com/vanadium/docs/master/images/namespace-client1.svg)
 
 In contrast, process `Client 2` with `ns2.v.io:8102` as its root can
 resolve only `y` and `z`.
 
-![The view from Client 2](https://cdn.rawgit.com/vanadium/docs/blob/master/images/namespace-client2.svg)
+![The view from Client 2](https://cdn.rawgit.com/vanadium/docs/master/images/namespace-client2.svg)
 
 The advantage of using a relative namespace is that it can define a context.
 For example, for debugging or testing one would set up the namespace to
@@ -85,7 +85,7 @@ tables ending in a server of the object we're trying to get at. The only
 difference with relative names is that we're assuming a "current directory" to
 start from as opposed to providing it in the name.
 
-![The leaves are servers, or empty tables](https://cdn.rawgit.com/vanadium/docs/blob/master/images/namespace-with-servers.svg)
+![The leaves are servers, or empty tables](https://cdn.rawgit.com/vanadium/docs/master/images/namespace-with-servers.svg)
 
 User-supplied server code that implements RPCs also appears as names in mount
 tables. In the diagram above `Server 1` and `Server 2` provide a server called
